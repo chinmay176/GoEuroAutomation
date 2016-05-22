@@ -41,10 +41,11 @@ public class GoEuro_Module1 {
 			wd.findElement(By.xpath("//div[@data-partner = 'airbnb']")).click();
 			
 			wd.findElement(By.id(ObjLibrary.id_searchButton)).click();
-			Thread.sleep(10000);  //Thread.sleep() should be avoided with an advanced syncElement or waitForPageLoad method
+//			Thread.sleep(10000);  //Thread.sleep() should be avoided with an advanced syncElement or waitForPageLoad method
 			
 			//Get the list of Elements which corresponds to individual search result
 			util.syncElement(wd, wd.findElement(By.xpath("//div[@id='results-train']")));
+			util.syncElement(wd, wd.findElement(By.xpath("//div/a[contains(@class,'search-book-button')]")));
 			List<WebElement> liResults = wd.findElements(By.xpath("//div[@id='results-train']/div/div"));
 			WebElement soloItem;
 			
