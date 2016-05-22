@@ -16,8 +16,8 @@ public class GoEuro_Module1 {
 	@Test
 	public void verfiy_SortingByPrice() {
 		try{
-			String searchText_To = "Madrid, Spain";
-			String searchText_From = "Barcelona, Spain";
+			String searchText_To = "Berlin, Germany";
+			String searchText_From = "Prague, Czech Republic";
 			ArrayList<Float> list_Original = new ArrayList<Float>(); //variable for original price sequence shown by the website
 			ArrayList<Float> list_Sorted = new ArrayList<Float>();   //variable for sorted pricing
 			Utility util = new Utility();
